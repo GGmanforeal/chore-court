@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chore-court"
+version = "1.0.0"
+description = "Fair chore splitting with envy-free algorithms and a very passive-aggressive judge."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Rahimjon Xasanov" }]
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["fair-division", "envy-free", "chores", "game-theory", "telegram"]
+
+[project.scripts]
+chorecourt = "chorecourt.__main__:cli"
+
+[tool.setuptools]
+packages = ["chorecourt"]
